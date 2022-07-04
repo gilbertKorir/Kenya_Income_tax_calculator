@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+    <title>Income Tax</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="form">
+                    
+                   <span class="period">PAY PERIOD:</span>  <input type="checkbox" name="pay" id="month" checked> MONTH
+                    <input type="checkbox" name="pay" id="year"> YEAR <br><br>
+
+                    <span class="amntsal">BASIC SALARY:</span><input class="sal" type="number" placeholder="YOUR SALARY" value="0"> KSH <br><br>
+
+                    <span class="amnt"> BENEFITS (BONUS, <br> ALLOWANCE):</span><input class="ben" type="number" placeholder="YOUR BENEFITS" value="0"> KSH <br><br>
+                   
+                    <span class="nssf">DEDUCT NSSF:</span>  <input type="checkbox" name="ded" id="yes" checked> YES
+                    <input type="checkbox" name="ded" id="no"> NO <br><br>
+                    <span class="nssf">DEDUCT NSSF:</span>  <input type="checkbox" name="ded" id="new" checked> 
+                    &nbsp;NEW NSSF RATES (TIERED)
+                    <br><br>
+                    <input type="checkbox" name="ded" id="old">&nbsp;OLD NSSF RATES (KSH200) <br><br>
+
+                    <span class="nssf">DEDUCT NHIF: </span>  <input type="checkbox" name="nhif" id="yesnhif" checked> YES
+                    <input type="checkbox" name="nhif" id="nonhif"> NO <br><br><br>
+
+                    <button id="btn" class="">CALCULATE</button>
+                    
+                </form>
+            </div>
+            <div class="col-md-6">
+              <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                      <td>INCOME BEFORE <br> PENSION DEDUCTION</td>
+                      <td>KSH0.00</td>
+                    </tr>
+                    <tr>
+                      <td>DEDUCTIBLE NSSF <br>
+                         PENSION <br> CONTRIBUTION</td>
+                      <td>KSH0.00</td>
+                    </tr>
+                    <tr>
+                        <td>INCOME AFTER <br> PENSION <br> DEDUCTIONS</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>BENEFITS IN KIND</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>TAXABLE INCOME</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>PAYE: TAX ON <br> TAXABLE INCOME</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>PERSONAL RELIEF</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>TAX NET OFF RELIEF</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>PAYE</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>CHARGEABLE <br> INCOME</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>NHIF CONTRIBUTION</td>
+                        <td>KSH0.00</td>
+                      </tr>
+                      <tr>
+                        <td>NET PAY</td>
+                        <td>KSH0.00</td>
+                      </tr>
+              </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

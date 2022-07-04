@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.period{
+    margin-right: 107px;
+  margin-bottom: 20px;
+
+}
+.form{
+    margin-top: 70px;
+}
+.ben, .sal{
+height: 50px;
+width: 150px;
+}
+#year, #no, #nonhif{
+    margin-left: 40px;
+}
+.amnt{
+    margin-right: 98px;
+}
+#old{
+    margin-left: 200px;
+}
+.nssf{
+    margin-right: 90px;
+}
+.amntsal{
+    margin-right: 95px;
+}
+#btn{
+background-color: #299c17;
+border: none;
+color: white;
+width: 400px;
+height: 50px;
+}
+.table{
+    margin-top: 70px;
+}
