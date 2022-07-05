@@ -11,26 +11,26 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <form class="form">
+                <form class="form" id="form">
                     
-                   <span class="period">PAY PERIOD:</span>  <input type="checkbox" name="pay" id="month" checked> MONTH
-                    <input type="checkbox" name="pay" id="year"> YEAR <br><br>
+                   <span class="period">PAY PERIOD:</span>  <input type="checkbox" name="period" id="period" value="month" checked> MONTH
+                    <input type="checkbox" name="period" id="period" value="year"> YEAR <br><br>
 
-                    <span class="amntsal">BASIC SALARY:</span><input class="sal" type="number" placeholder="YOUR SALARY" value="0"> KSH <br><br>
+                    <span class="amntsal">BASIC SALARY:</span><input class="sal" type="number" id="basic" placeholder="YOUR SALARY" value=""> KSH <br><br>
 
-                    <span class="amnt"> BENEFITS (BONUS, <br> ALLOWANCE):</span><input class="ben" type="number" placeholder="YOUR BENEFITS" value="0"> KSH <br><br>
+                    <span class="amnt"> BENEFITS (BONUS, <br> ALLOWANCE):</span><input class="ben" id="ben" type="number" placeholder="YOUR BENEFITS" value="0"> KSH <br><br>
                    
-                    <span class="nssf">DEDUCT NSSF:</span>  <input type="checkbox" name="ded" id="yes" checked> YES
-                    <input type="checkbox" name="ded" id="no"> NO <br><br>
-                    <span class="nssf">DEDUCT NSSF:</span>  <input type="checkbox" name="ded" id="new" checked> 
+                    <span class="nssf">DEDUCT NSSF:</span>  <input type="checkbox" name="ded" id="ded" checked> YES
+                    <input type="checkbox" name="ded" id="ded"> NO <br><br>
+                    <span class="nssf">NSSF RATES:</span>  <input type="checkbox" name="rates" id="rate" checked> 
                     &nbsp;NEW NSSF RATES (TIERED)
                     <br><br>
-                    <input type="checkbox" name="ded" id="old">&nbsp;OLD NSSF RATES (KSH200) <br><br>
+                    <input type="checkbox" name="rates" id="rate">&nbsp;OLD NSSF RATES (KSH200) <br><br>
 
                     <span class="nssf">DEDUCT NHIF: </span>  <input type="checkbox" name="nhif" id="yesnhif" checked> YES
                     <input type="checkbox" name="nhif" id="nonhif"> NO <br><br><br>
 
-                    <button id="btn" class="">CALCULATE</button>
+                    <button type="submit" id="btn" class="" onclick="calculate()">CALCULATE</button>
                     
                 </form>
             </div>
@@ -60,7 +60,7 @@
                       </tr>
                       <tr>
                         <td>PAYE: TAX ON <br> TAXABLE INCOME</td>
-                        <td>KSH0.00</td>
+                        <td  id="tax">KSH0.00</td>
                       </tr>
                       <tr>
                         <td>PERSONAL RELIEF</td>
@@ -90,6 +90,9 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
 </body>
 </html>
