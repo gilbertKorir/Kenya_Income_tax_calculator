@@ -276,14 +276,23 @@ const payeValue = () => {
 
    const theNetPay = () => {
 
+    let pay = 0;
+    let tax = parseInt(newtaxableIncome())
     let finalAmount = parseInt(totalIncome());
     let paye = parseInt(payeValue());
     let nhif = parseInt(deductNHIF())
     let relief = parseInt(personalRelief());
     let nssf = parseInt(deductNSSF());
     
+    let sum = paye + nhif + relief + nssf
+
+    if(finalAmount<sum){
+        pay = tax -nhif
+    }else{
+        pay = finalAmount - (paye + nhif + relief + nssf);
+    }
     
-    let pay = finalAmount - (paye + nhif + relief + nssf);
+    // let pay = finalAmount - (paye + nhif + relief + nssf);
     // document.querySelector(".val12").textContent = pay;
     return pay;
 }
