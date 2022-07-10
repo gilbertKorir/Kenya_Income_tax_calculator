@@ -21,8 +21,11 @@ width: 150px;
 .amnt{
     margin-right: 98px;
 }
-#old{
+#oldrate{
     margin-left: 200px;
+}
+#newrate{
+    margin-left: 15px;
 }
 .nssf{
     margin-right: 90px;
